@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export const todoContext = createContext();
 
-export const TodoProvider = ({ children }) => {
+export const ToDoProvider = ({ children }) => {
   const [toDos, setToDos] = useState([
     { id: 1, text: 'Estudar React', done: false },
     { id: 2, text: 'Praticar com um projeto', done: true },
@@ -32,9 +32,17 @@ export const TodoProvider = ({ children }) => {
   const completedToDos = toDos.filter(todo => todo.done);
   const pendingToDos = toDos.filter(todo => !todo.done);
 
-  const contextVal = { toDos, addToDo, markTodo, completedToDos, pendingToDos };
+  const contextValues = {
+    toDos,
+    addToDo,
+    markTodo,
+    completedToDos,
+    pendingToDos,
+  };
 
   return (
-    <todoContext.Provider values={contextVal}>{children}</todoContext.Provider>
+    <todoContext.Provider value={contextValues}>
+      {children}
+    </todoContext.Provider>
   );
 };
