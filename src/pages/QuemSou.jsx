@@ -1,19 +1,19 @@
-import { Avatar } from "../components/Avatar";
-import { Bio } from "../components/Bio";
-import { Usuario } from "../components/Usuario";
+import { Avatar } from '../components/Avatar';
+import { Bio } from '../components/Bio';
+import { Usuario } from '../components/Usuario';
 
 const redes = [
   {
-    icone: "bi-linkedin",
-    link: "https://www.linkedin.com/company/lab365/",
+    icone: 'bi-linkedin',
+    link: 'https://www.linkedin.com/in/ericocoutojr/',
   },
   {
-    icone: "bi-instagram text-danger",
-    link: "https://www.instagram.com/lab365_/",
+    icone: 'bi-instagram text-danger',
+    link: 'https://www.instagram.com/ericocoutojr/',
   },
   {
-    icone: "bi-github text-light-emphasis",
-    link: "https://github.com/FullStack-Itaguacu",
+    icone: 'bi-github text-light-emphasis',
+    link: 'https://github.com/EricoCoutoJr/',
   },
 ];
 
@@ -23,28 +23,29 @@ export const QuemSou = () => {
       <div className="row border-bottom py-2">
         <div className="col-2">
           <Avatar
-            src="https://github.com/FullStack-Itaguacu.png"
-            alt="Lab365 - Full Stack Itaguaçu"
+            src="https://avatars.githubusercontent.com/u/63860659?v=4"
+            alt="Erico Couto Jr no Lab 365"
           />
         </div>
         <div className="col ">
-          <Usuario nome="Lab365" cargo="Instituição de ensino" redes={redes} />
+          <Usuario
+            nome="Erico Couto Jr."
+            cargo="Aluno DevFullStack"
+            redes={redes}
+          />
         </div>
       </div>
       <div className="row mt-4">
         <Bio>
           <p className="fw-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            aperiam quidem dolore officiis? Neque, ullam, eius quisquam cum
-            magnam est aperiam perferendis obcaecati suscipit dolor laborum? Eos
-            provident hic velit?
+            Desenvolvendo novas habilidades e conhecimento na área de WEB com
+            apendizado em HTML, JavaScript e React.
           </p>
           <p className="fw-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            dignissimos adipisci tenetur consequuntur vitae iure dolorum
-            provident, aliquid maxime nostrum! Ducimus nihil quisquam in modi,
-            dolore vel mollitia tempora repellendus temporibus beatae
-            perferendis obcaecati.
+            Neste projeto foram implementados o uso de custom hooks, context,
+            router, class components e children props. E por fim, a otimização
+            de funções em módulos que inicialmente foram implementados como
+            classe.
           </p>
         </Bio>
       </div>
