@@ -1,11 +1,13 @@
-### Projeto base para os exercícios M01S09 - React
+![Capa Portifoil DevFullStack](ImagemPortifolio.png)
+
+### Projeto do exercícios da semana 09 de React - ToDo com custom hooks, context, router, class components e children props.
 
 Para utilizar este projeto como base, faça o seguinte passo-a-passo:
 
 - Clone o projeto para a sua máquina
 
 ```bash
-git clone git@github.com:FullStack-Itaguacu/m01s09-exercicios-todo-app.git .
+https://github.com/EricoCoutoJr/DevFullStack---M1S09.git
 ```
 
 Obs: necessário configurar SSH [(veja como clicando aqui)](https://www.youtube.com/watch?v=n-H1eFSsugo)
@@ -24,8 +26,4 @@ npm run dev
 
 ### Observações
 
-Este projeto já vem com o Bootstrap 5 instalado e configurado.
-
-### Autor
-
-[Prof. Mika](https://www.linkedin.com/in/michaelnsc/)
+Este projeto já vem com o Bootstrap 5 instalado e configurado. A página HTML que será utilizada como base.
